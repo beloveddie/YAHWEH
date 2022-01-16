@@ -1,4 +1,4 @@
-# YAHWEH helps pray a lil more
+# YAHWEH | ...just a lil more
 
 build in progress!
 
