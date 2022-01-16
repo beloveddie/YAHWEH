@@ -47,7 +47,6 @@ function App() {
         checkedIcon={<FaCheck />}
         activity="Pray"
         handlePrayed={handlePrayed}
-        // handleViewDetails={handleViewDetails}
       />
       <Footer />
     </div>

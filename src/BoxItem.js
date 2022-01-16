@@ -9,6 +9,7 @@ const BoxItem = ({
   handleActivity,
 }) => {
   const [viewDetails, setViewDetails] = useState(false);
+  const { id, title, prayed, details } = listItem;
 
   const handleViewDetails = () => {
     const myViewDetails = viewDetails;
@@ -46,7 +47,7 @@ const BoxItem = ({
   return (
     <>
       <li style={listStyle}>
-        <h2 style={h2Style}>{listItem.title}</h2>
+        <h2 style={h2Style}>{title}</h2>
 
         <p style={pStyle} onClick={() => handleViewDetails()}>
           {!viewDetails ? "View Details" : "Hide Details"}
@@ -55,9 +56,9 @@ const BoxItem = ({
           className="pray"
           role="button"
           tabIndex="0"
-          onClick={() => handleActivity(listItem.id)}
+          onClick={() => handleActivity(id)}
         >
-          {!listItem.prayed ? (
+          {!prayed ? (
             <>
               {activityIcon} <p>{activity}</p>
             </>
@@ -68,7 +69,7 @@ const BoxItem = ({
           )}
         </span>
       </li>
-      {viewDetails && <ViewDetails details={listItem.details} />}
+      {viewDetails && <ViewDetails details={details} />}
     </>
   );
 };

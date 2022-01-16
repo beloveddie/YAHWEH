@@ -13,6 +13,7 @@ const Content = ({
     <main className="main">
       <p>God is Listening</p>
       <BoxList
+        className="Box-list"
         list={prayerList}
         setList={setPrayerList}
         activityIcon={prayerIcon}

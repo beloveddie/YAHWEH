@@ -9,10 +9,10 @@ const BoxList = ({
   handleViewDetails,
 }) => {
   return (
-    <ul className="list">
+    <ul className="box-list">
       {list.map((listItem) => (
         <BoxItem
-          key={listItem.id}
+          key={listItem}
           listItem={listItem}
           activityIcon={activityIcon}
           checkedIcon={checkedIcon}
