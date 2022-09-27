@@ -1,5 +1,3 @@
-# YAHWEH | ...just a lil more
+# YAHWEH
 
-build in progress!
-
-## ...striving for progress not perfection
+## ...progress not perfection
